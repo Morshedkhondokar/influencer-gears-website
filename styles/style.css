@@ -14,6 +14,7 @@
     --card-title-color: #18191F;
     --card-description-color: #787885;
     --rating-color:#5E6366;
+    --primary-color: #0A0826;
 }
 
 
@@ -198,7 +199,78 @@ ul{
 }
 
 
+/* featured secrion styles */
+.featured{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 
+    gap: 90px;
+}
+
+.featured_content{
+}
+
+.featured_title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.featured_description{
+    font-weight: bold;
+    color: #6C6C6C;
+    margin: 16px 0;
+}
+
+.featured_btn{
+    padding: 10px 24px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--btn-color);
+    border: none;
+}
+
+/* footer section styles */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--card-title-color);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content{
+    width: 260px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer_title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer_description{
+    font-size: 13px;
+    font-weight: bold;
+    color: #D9DBE1;
+}
+
+.socil_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    margin-top: 17px;
+}
 
 
 
@@ -281,6 +353,23 @@ ul{
         justify-content: end;
     }
 
+    /* featured section */
+    .featured{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .featured img{
+        width: 100%;
+    }
+
+    .featured_btn{
+        margin-top: 30px;
+    }
+    
+
 }
 
 /* resposive styles for tablat */
@@ -348,6 +437,32 @@ ul{
         margin: 0 auto;
         display: flex;
         justify-content: end;
+    }
+
+
+    /* featured section */
+    .featured{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .featured_title{
+        margin: 15px 0;
+    }
+
+    .featured_description{
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .featured img{
+        width: 100%;
+    }
+
+    .featured_btn{
+        margin-top: 40px;
     }
 
 
