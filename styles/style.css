@@ -11,6 +11,9 @@
 :root{
     --primary-color:#3A3A3A;
     --btn-color:#E02C6D;
+    --card-title-color: #18191F;
+    --card-description-color: #787885;
+    --rating-color:#5E6366;
 }
 
 
@@ -105,19 +108,93 @@ ul{
     align-items: center;
 }
 
+.banner_bg img{
+    width: 100%;
+}
+
 /* oneline shop styles */
 .oneline_shop{
     width: 1100px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
+    display: flex;
     margin-top: 100px;
     gap: 60px;
-    /* border: 2px solid #3A3A3A; */
     padding: 35px 60px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     border-radius: 10px;
 }
+
+.oneline_shop img{
+    width: 100%;
+}
+
+
+/* Popular Collection */
+.Popular{
+    width: 1050px;
+    margin: 0 auto;
+    /* border: 2px solid #E02C6D; */
+    /* text-align: center; */
+}
+
+.popular_title{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 30px 0;
+}
+
+.collection_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card{
+    width: 330px;
+    /* border: 2px solid rgb(0, 255, 179); */
+    padding: 17px 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+}
+
+.card_title{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--card-title-color);
+}
+
+.price{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.rating{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--rating-color);
+}
+
+.card_description{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--card-description-color);
+}
+
+.see{
+    font-weight: bold;
+    color: var(--btn-color);
+    margin-top: 50px;
+    text-align: end;
+}
+
+
+
+
+
+
 
 
 
@@ -130,8 +207,53 @@ ul{
     .none{
         display: none;
     }
-    .bar{
+
+    /* banner section styles */
+    .bar, .circal_img{
         display: block;
+    }
+    .banner_container{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .banner_bg{
+        width: 257px;
+        height: 250px;
+        background-image: none;
+        position: relative;
+    }
+
+    .main_camera_img{
+        position: absolute;
+    }
+
+
+    .banner_content{
+        text-align: center;
+    }
+
+    .banner_title{
+        font-size: 28px;
+    }
+
+    .banner_description{
+        font-weight: 400;
+    }
+
+    /* online shop */
+    .oneline_shop{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .oneline_shop img{
+        width: 50px;
     }
 }
 
@@ -141,4 +263,50 @@ ul{
     header{
         margin: 20px;
     }
+
+    /* banner swction styles */
+    .banner_container{
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .banner_title{
+        font-size: 2rem;
+    }
+
+    .banner_content{
+        width: 400px;
+    }
+
+    .banner_bg{
+        width: 300px;
+        height: 250px;
+        background-image: none;
+        position: relative;
+        right: 30px;
+    }
+
+    .circal_img{
+        display: block;
+    }
+
+    .main_camera_img{
+        position: absolute;
+    }
+
+    /* online shop */
+    .oneline_shop{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .oneline_shop img{
+        width: 70px;
+    }
+
+
 }
