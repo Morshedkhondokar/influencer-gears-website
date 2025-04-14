@@ -133,8 +133,7 @@ ul{
 .Popular{
     width: 1050px;
     margin: 0 auto;
-    /* border: 2px solid #E02C6D; */
-    /* text-align: center; */
+    margin-bottom: 100px;
 }
 
 .popular_title{
@@ -183,11 +182,19 @@ ul{
     color: var(--card-description-color);
 }
 
+.card img{
+    width: 100%;
+}
+
+
+
 .see{
     font-weight: bold;
     color: var(--btn-color);
     margin-top: 50px;
+    margin-right: 20px;
     text-align: end;
+    cursor: pointer;
 }
 
 
@@ -255,6 +262,25 @@ ul{
     .oneline_shop img{
         width: 50px;
     }
+
+    /* collection_container */
+
+    .Popular{
+        width: 100%;
+    }
+
+    .collection_container{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .see_more{
+        width: 330px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+    }
+
 }
 
 /* resposive styles for tablat */
@@ -306,6 +332,22 @@ ul{
 
     .oneline_shop img{
         width: 70px;
+    }
+
+    .Popular{
+        width: 100%;
+        place-items: center;
+    }
+
+    .card{
+        width: 250px;
+    }
+
+    .see_more{
+        width: 750px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
     }
 
 
